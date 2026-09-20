@@ -22,7 +22,21 @@ app.get("/api/health", (req, res) => {
     message: "API is healthy",
   });
 });
-
+app.get("/api/users", (req, res) => {
+  res.json({
+    success: true,
+    users: [
+      {
+        id: 1,
+        name: "Nikhil",
+      },
+      {
+        id: 2,
+        name: "Rahul",
+      },
+    ],
+  });
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
