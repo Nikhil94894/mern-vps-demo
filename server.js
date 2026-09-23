@@ -1,3 +1,6 @@
+
+
+
 const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./db");
@@ -28,11 +31,12 @@ app.get("/api/users", (req, res) => {
     users: [
       {
         id: 1,
-        name: "Nikhil",
+        name: "Mohan Ranga",
       },
       {
         id: 2,
-        name: "Rahul",
+        name: "Rohit Kumar",
+
       },
     ],
   });
